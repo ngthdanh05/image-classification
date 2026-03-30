@@ -13,7 +13,7 @@ def get_dataloaders(batch_size=32, img_size=128, val_split=0.2):
     
     # Load toàn bộ dataset từ PetImages
     full_dataset = datasets.ImageFolder(
-        root='data/microsoft-catsvsdogs-dataset/PetImages', 
+        root='data/PetImages', 
         transform=transform
     )
     

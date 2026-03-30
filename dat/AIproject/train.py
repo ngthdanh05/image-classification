@@ -9,7 +9,7 @@ from data_loader import get_dataloaders
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Đang dùng: {device} (RTX 3050 4GB)")
 
-batch_size = 32          # giảm xuống 16 nếu hết VRAM
+batch_size = 16          # giảm xuống 16 nếu hết VRAM
 epochs = 15
 learning_rate = 0.001
 

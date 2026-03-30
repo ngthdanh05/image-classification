@@ -24,9 +24,9 @@ def predict_image(image_path):
         _, predicted = torch.max(output, 1)
     
     class_names = ['mèo', 'chó']
-    print(f"✅ Dự đoán: Đây là con **{class_names[predicted.item()]}**")
+    print(f"Dự đoán: Đây là con **{class_names[predicted.item()]}**")
     print(f"Độ tin cậy: {prob[0][predicted.item()].item()*100:.1f}%")
 
 # Ví dụ dùng
 if __name__ == "__main__":
-    predict_image("path/to/your/test_image.jpg")   # ← thay đường dẫn ảnh của bạn
+    predict_image("data/PetImages/Cat/10000.jpg")
